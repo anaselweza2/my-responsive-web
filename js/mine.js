@@ -13,9 +13,10 @@ $(document).ready(function(e) {
 	$(".hov1").click(function(){
 			$(".news1").fadeIn(1000);
 			$(".news2").css({"display":"none"});
-			
 			$(".news3").css({"display":"none"});
-			
+			$(".box").css({"color":"#fff","background":"#4fbbe9","border-color":"#4fbbe9"});
+			$(".box2").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
+			$(".box3").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
 			
 			
 	});
@@ -25,6 +26,9 @@ $(document).ready(function(e) {
 			$(".news1").css({"display":"none"});
 			
 			$(".news2").css({"display":"none"});
+			$(".box2").css({"color":"#fff","background":"#4fbbe9","border-color":"#4fbbe9"});
+			$(".box").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
+			$(".box3").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
 			
 	});
 	
@@ -33,7 +37,23 @@ $(document).ready(function(e) {
 			$(".news3").css({"display":"none"});
 			
 			$(".news1").css({"display":"none"});
+			$(".box3").css({"color":"#fff","background":"#4fbbe9","border-color":"#4fbbe9"});
+			$(".box").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
+			$(".box2").css({"color":"#000","background":"#FFF","border-color":"#e3e3e3"});
 			
+	});
+	
+	$(" .navbar-collapse .an-bars").click(function(){
+		$(".therightbar").fadeIn(1000);
+		
+	});
+	$(" .navbar-toggle").click(function(){
+		$(".therightbar").fadeIn(1000);
+		
+	});
+		$(" .therightbar .close").click(function(){
+		$(".therightbar").fadeOut(1000);
+		
 	});
 
 	  
@@ -78,5 +98,8 @@ $(".navbar-collapse li a").click(function(e){
 		$(this).addClass("my-active").siblings().removeClass("my-active");
   });
 
+});
+$(window).load(function(){
+	$(".loading").fadeOut(2000);
 });
 

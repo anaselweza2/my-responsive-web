@@ -9,7 +9,7 @@
 	
 /* navbar */
 .navbar-fixed-top{
-	z-index:99999;
+	z-index:99;
 }
 
 	.my-navbar {
@@ -29,7 +29,7 @@
 		
 	 .my-navbar .navbar-default .navbar-nav > li > a{
 		 color:#FFF;
-		 padding:20px;
+		 padding:19px;
 	 }
 
 
@@ -58,14 +58,37 @@
 .my-active {
 	color:#fcc121 !important;
 }
-		 
- 
+
+
+
+
+
+
+
  /* end navbar */
  /* start slider */
  .my-slider{
 	 overflow:hidden;
+
+	
 	 
  }
+ 
+ #bigTriangleColor {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+
 
 .my-slider .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
 	 width:100%;
@@ -509,7 +532,7 @@ ul, ol {
 	position:absolute;
 	cursor:pointer;
 	z-index:9;
-	display:none;}
+	display:block;}
 
 .last-news .news2{
 	width:100%;
@@ -521,7 +544,7 @@ ul, ol {
 	display:none;
 	cursor:pointer;
 	z-index:9;
-	display:block;
+	
 	
 }
 .last-news .news3{
@@ -551,6 +574,12 @@ ul, ol {
 	border:solid 2px #e3e3e3;
 	
 }
+.last-news .news-div .box{
+	color:#FFF;
+	background-color:#4fbbe9;
+	transition:all ease-in-out 1s;
+	border-color:#4fbbe9;
+}
 .last-news .news-div .box2{
    
     top: 670px;
@@ -563,10 +592,10 @@ ul, ol {
 .last-news .hov2:hover .box2,
 .last-news .hov3:hover .box3
 {
-	color:#FFF;
-	background-color:#4fbbe9;
+	color:#FFF !important;
+	background-color:#4fbbe9 !important;
 	transition:all ease-in-out 1s;
-	border-color:#4fbbe9;
+	border-color:#4fbbe9 !important;
 }
 
 .last-news .news1:hover {
@@ -773,28 +802,141 @@ ul, ol {
 }
 
 
-
-
-
-
-
-
-
-	
-
-
 /* end copy-right  */
 
 
+
+/* start loading  */
+
+.loading{
+   width:100%;
+   height:100%;
+   position:fixed;
+   z-index:9999 !important;
+   background-color:#FFF;
+   top:0;
+}
+ .spinner {
+  margin: 325px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #fcc121;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+  background-color: #4fbbe9;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/* end loading  */
+/* start therightbar  */
+
+.therightbar{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index:999;
+	background-color:#FFF;
+	padding:10px;
+	text-align:center;
+	padding-top:70px;
+	display:none;
+}
+.therightbar button{
+	margin:10px;
+	padding:10px;
+	background-color:#f5f5f5;
+	width:70%;
+	border-color:#f5f5f5;
+	color:#515A5;
+	font-size:18px;
 	
+}
+
+.therightbar h1{
+	margin-bottom:100px;
+	margin-top:40px;
+}
+.close{
+	opacity:1;
+	color:#fcc121;
+}
 
 	
-	
+.therightbar .crface,
+.therightbar .cartwit,
+.therightbar .cartgoog,
+.therightbar .caryout,
+.therightbar .carpp{
+	cursor:pointer;
+}
+
+.therightbar .crface:hover .fa-circle {
+	cursor:pointer;
+	color:#3b5998 !important;
+	transition:all ease-in-out .5s;
+}
+.therightbar .cartwit:hover .fa-circle{
+	cursor:pointer;
+	color:#1DA1F2 !important;
+	transition:all ease-in-out .5s;
+}
+.therightbar .cartgoog:hover .fa-circle{
+	cursor:pointer;
+	color:#DB4437 !important;
+	transition:all ease-in-out .5s;
+}
+.therightbar .caryout:hover .fa-circle{
+	cursor:pointer;
+	color:#0077B5 !important;
+	transition:all ease-in-out .5s;
+}
+.therightbar .carpp:hover .fa-circle{
+	cursor:pointer;
+	color:#cb2027;
+	transition:all ease-in-out .5s;
+}
 
 
-	
 
-	
-
-
-	
+/* end therightbar  */	
